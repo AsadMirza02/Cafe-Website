@@ -811,11 +811,24 @@ body.active { overflow: hidden; }
 
 
 
-
-
 /*-----------------------------------*\
   #CTA
 \*-----------------------------------*/
+
+.menu-container {
+  display: flex;
+  flex-direction: column; /* Stacks images vertically */
+  align-items: center;
+  width: 100vw; /* Ensures full screen width */
+  min-height: 100vh; /* Makes sure the container is at least full height */
+}
+
+.menu-container img {
+  width: 100vw;  /* Makes the image span full width */
+  height: 100vh; /* Makes the image span full height */
+  object-fit: contain; /* Ensures the whole image is visible */
+}
+
 
 .cta {
   background-repeat: no-repeat;
@@ -1397,17 +1410,23 @@ textarea.input-field {
   .hero-banner {
     display: block;
     position: absolute;
-    top: calc(50% + 86px);
+    top: calc(50% + 30px); /* Reduce value to move image higher */
     transform: translateY(-50%);
     right: 50px;
     max-width: 40%;
     aspect-ratio: 1 / 0.9;
-  }
+    overflow: hidden; /* Prevents extra space */
+}
 
-  .hero-img {
+.hero-img {
     position: absolute;
-    bottom: 0;
-  }
+    bottom: 10%; /* Moves the image higher */
+    transform: translateY(-10%); /* Fine-tunes upward movement */
+    object-fit: cover; /* Keeps proportions */
+    object-position: top; /* Moves focus up */
+    width: 100%;
+}
+
 
   .hero::after {
     content: "";
