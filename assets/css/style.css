@@ -867,6 +867,11 @@ body.active { overflow: hidden; }
 
 .cta-img { transform: scale(1.3) translateY(60px); }
 
+.cta-img {
+  width: 60%;
+  max-width: 300px;
+  height: auto;
+}
 .cta-banner .abs-img {
   top: 50px;
   left: 10px;
@@ -1410,22 +1415,23 @@ textarea.input-field {
   .hero-banner {
     display: block;
     position: absolute;
-    top: calc(50% + 30px); /* Reduce value to move image higher */
+    top: calc(60% + 30px); /* Adjust to move the banner */
     transform: translateY(-50%);
     right: 50px;
-    max-width: 40%;
-    aspect-ratio: 1 / 0.9;
-    overflow: hidden; /* Prevents extra space */
+    max-width: 30%; /* Reduce the overall size */
+    aspect-ratio: 1 / 1.2;
+    overflow: hidden;
 }
 
 .hero-img {
     position: absolute;
-    bottom: 10%; /* Moves the image higher */
-    transform: translateY(-10%); /* Fine-tunes upward movement */
-    object-fit: cover; /* Keeps proportions */
-    object-position: top; /* Moves focus up */
-    width: 100%;
+    bottom: 5%;
+    transform: translateY(-10%);
+    object-fit: contain; /* Ensures the full image is visible without cropping */
+    width: 80%; /* Reduce image width */
+    height: auto; /* Maintain aspect ratio */
 }
+
 
 
   .hero::after {
