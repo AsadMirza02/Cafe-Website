@@ -1415,10 +1415,10 @@ textarea.input-field {
   .hero-banner {
     display: block;
     position: absolute;
-    top: calc(60% + 30px); /* Adjust to move the banner */
+    top: calc(20% + 30px); /* Adjust to move the banner */
     transform: translateY(-50%);
     right: 50px;
-    max-width: 30%; /* Reduce the overall size */
+    max-width: 40%; /* Reduce the overall size */
     aspect-ratio: 1 / 1.2;
     overflow: hidden;
 }
