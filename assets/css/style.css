@@ -1425,7 +1425,7 @@ textarea.input-field {
 
 .hero-img {
     position: absolute;
-    bottom: 5%;
+    bottom: 10%;
     transform: translateY(-10%);
     object-fit: contain; /* Ensures the full image is visible without cropping */
     width: 80%; /* Reduce image width */
