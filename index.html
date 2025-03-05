@@ -703,32 +703,44 @@
         <ul class="fiter-list">
 
           <li>
-            <button class="filter-btn  active">Breakfast and Mexican Food</button>
+            <button class="filter-btn" onclick="scrollToSection('menu1')">Breakfast and Mexican Food</button>
           </li>
 
           <li>
-            <button class="filter-btn">Taste of India</button>
+            <button class="filter-btn" onclick="scrollToSection('menu2')">Taste of India</button>
           </li>
 
           <li>
-            <button class="filter-btn">Snacks and Sides</button>
+            <button class="filter-btn" onclick="scrollToSection('menu3')">Snacks and Sides</button>
           </li>
 
           <li>
-            <button class="filter-btn">Drinks and Desserts</button>
+            <button class="filter-btn" onclick="scrollToSection('menu4')">Drinks and Desserts</button>
           </li>
 
         <br><br><br>
         
         <div class="menu-container">
           
-            <img src="./assets/images/menu1.jpg" alt="Menu Page 1">
-            <img src="./assets/images/menu2.jpg" alt="Menu Page 2">
-            <img src="./assets/images/menu3.jpg" alt="Menu Page 3">
-            <img src="./assets/images/menu4.jpg" alt="Menu Page 4">
+          <img id="menu1" src="./assets/images/menu1.jpg" alt="Menu Page 1">
+          <img id="menu2" src="./assets/images/menu2.jpg" alt="Menu Page 2">
+          <img id="menu3" src="./assets/images/menu3.jpg" alt="Menu Page 3">
+          <img id="menu4" src="./assets/images/menu4.jpg" alt="Menu Page 4">
         </div>
       </section>
 
+      <script>
+        function scrollToSection(id) {
+            const target = document.getElementById(id);
+            const offset = 100; // Adjust this value to control how much higher it stops
+            const targetPosition = target.getBoundingClientRect().top + window.scrollY - offset;
+    
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+      </script>
 
       <section class="section section-divider white cta" style="background-image: url('./assets/images/hero-bg.jpg')">
         <div class="container">
