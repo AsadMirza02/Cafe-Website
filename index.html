@@ -40,46 +40,50 @@
   <header class="header" data-header>
     <div class="container">
 
-      <h1>
-        <a href="#" class="logo">Danny's Café<span class="span">.</span></a>
-      </h1>
+        <h1>
+            <a href="#" class="logo">Danny's Café<span class="span">.</span></a>
+        </h1>
 
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
+        <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
 
-          <li class="nav-item">
-            <a href="#home" class="navbar-link" data-nav-link>Home</a>
-          </li>
+                <li class="nav-item">
+                    <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                </li>
 
-          <li class="nav-item">
-            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
-          </li>
+                <li class="nav-item">
+                    <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+                </li>
 
-          <li class="nav-item">
-            <a href="#food-menu" class="navbar-link" data-nav-link>Menu</a>
-          </li>
+                <!-- Menu Item with Nested Dropdown -->
+                <li class="nav-item dropdown">
+                    <a href="#food-menu" class="navbar-link" data-nav-link>Menu ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:void(0);" class="navbar-link" onclick="scrollToSection('menu1')">Breakfast and Indian Food</a></li>
+                        <li><a href="javascript:void(0);" class="navbar-link" onclick="scrollToSection('menu2')">Taste of India</a></li>
+                        <li><a href="javascript:void(0);" class="navbar-link" onclick="scrollToSection('menu3')">Snacks and Sides</a></li>
+                        <li><a href="javascript:void(0);" class="navbar-link" onclick="scrollToSection('menu4')">Drinks and Desserts</a></li>
+                    </ul>
+                </li>
 
-          
+                <li class="nav-item">
+                    <a href="#bottom" class="navbar-link" data-nav-link>Contact Us</a>
+                </li>
 
-          <li class="nav-item">
-            <a href="#bottom" class="navbar-link" data-nav-link>Contact Us</a>
-          </li>
+            </ul>
+        </nav>
 
-        </ul>
-      </nav>
-
-      <div class="header-btn-group">
-
-
-        <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
-          <span class="line top"></span>
-          <span class="line middle"></span>
-          <span class="line bottom"></span>
-        </button>
-      </div>
+        <div class="header-btn-group">
+            <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
+                <span class="line top"></span>
+                <span class="line middle"></span>
+                <span class="line bottom"></span>
+            </button>
+        </div>
 
     </div>
-  </header>
+</header>
+
 
 
 
